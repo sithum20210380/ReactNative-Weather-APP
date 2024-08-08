@@ -8,23 +8,23 @@ import cloud1 from '../../assets/OpenWeatherIcons/04d.png'
 
 export default function index() {
   const [weatherDate, setWeatherDate] = useState(null)
-    const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true)
 
-    //fetch from open weather api
-    useEffect(() => {
-        fetch('https://api.openweathermap.org/data/2.5/weather?q=lagos&appid=f54fbbe77a3d042576ceabfbd3515665')
-            .then((response) => response.json())
-            .then((json) => {
-                console.log(json)
-                setWeatherDate(json)
-                setLoading(false)
-            })
-            .catch((error) => console.error(error))
-    }, [])
+  //fetch from open weather api
+  useEffect(() => {
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=lagos&appid=f54fbbe77a3d042576ceabfbd3515665')
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json)
+        setWeatherDate(json)
+        setLoading(false)
+      })
+      .catch((error) => console.error(error))
+  }, [])
 
-    if (loading) {
-        return <ActivityIndicator size="large" color="#0000ff" />;
-    }
+  if (loading) {
+    return <ActivityIndicator size="large" color="#0000ff" />;
+  }
   return (
     <View style={styles.todayWeatherMainContainer}>
       <View style={styles.header}>
