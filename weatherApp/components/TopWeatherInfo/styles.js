@@ -2,7 +2,6 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
     mainContainer: {
-        //flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -101,10 +100,11 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
+        gap: 10,
     },
     cloudIconBottom: {
-        width: 70,
-        height: 70,
+        width: 80,
+        height: 50,
     },
     middleText: {
         color: '#a1a1a1',
@@ -115,6 +115,10 @@ const styles = StyleSheet.create({
         color: 'black',
         fontSize: 16,
         fontWeight: '500',
+    },
+    icons: {
+        width: 30,
+        height: 30,
     },
 });
 

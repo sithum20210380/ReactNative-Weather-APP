@@ -12,8 +12,14 @@ const styles = StyleSheet.create({
         marginRight: 20,
     }, 
     leftContainer: {
+        flexDirection: 'row',
+        gap: 20,
         marginLeft: 20,
-    }
+    },
+    SideBarIcon: {
+        width: 20,
+        height: 20,
+    },
 });
 
 export default styles;

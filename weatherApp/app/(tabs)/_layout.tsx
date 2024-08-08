@@ -23,6 +23,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="dailyForecast"
+        options={{
+          title: 'DailyForecast',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'rainy' : 'rainy-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
