@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="todayForecast"
+        options={{
+          title: 'TodayForecast',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'calendar-sharp' : 'calendar-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }

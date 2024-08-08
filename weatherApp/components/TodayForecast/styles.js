@@ -1,83 +1,57 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-    mainContainer: {
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    topContainer: {
-        flexDirection: 'coloumn',
-        alignItems: 'center',
+    header: {
+        marginTop: 80,
+        flexDirection: 'row',
         justifyContent: 'center',
     },
-    location: {
+    headerText: {
+        fontSize: 20,
+        fontWeight: '500',
+    },
+    sunriseContainer: {
+        marginTop: 20,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: 10,
-        marginBottom: -10,
-    },
-    dateTime: {
-        marginTop: 15,
-        marginBottom: -10,
-    },
-    temperature: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: -14,
-    },
-    cloudIcon: {
-        width: 90,
-        height: 90,
-    },
-    locationText: {
-        color: 'white',
-        fontSize: 24,
-        fontWeight: 'bold',
-    },
-    dateTimeText: {
-        color: 'white',
-        fontSize: 18,
-    },
-    temperatureText: {
-        color: 'white',
-        fontSize: 58,
-    },
-    weatherText: {
-        color: 'white',
-        fontSize: 34,
-        fontWeight: 'bold',
-    },
-
-    middleContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginTop: 30,
-        width: '100%',
         backgroundColor: 'white',
         padding: 20,
-        borderRadius: 20,
+        margin: 20,
+        borderRadius: 15,
+        gap: 40,
     },
-    maxTempContainer:{
+    sunrise: {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: 5,
     },
-    humidityContiner:{
+    sunriseImage: { 
+        width: 50, 
+        height: 50,
+    },
+    sunriseTimeText: {
+        fontSize: 18,
+        fontWeight: '500',
+        color: 'grey',
+    },
+    sunriseText: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#fa7d00',
+    },
+    sunset: {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: 5,
+        marginLeft: 20,
     },
-    windContainer:{
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: 5,
+    sunrisetText: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#FF7355',
     },
-    
+
     bottomContainer:{
         flexDirection: 'row',
         justifyContent: 'space-between',
