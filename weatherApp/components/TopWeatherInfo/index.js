@@ -32,20 +32,17 @@ export default function index() {
         <View style={styles.mainContainer}>
             <View style={styles.location}>
                 <Feather name="map-pin" size={24} color="white" />
-                {/* <Text>{weatherDate.name}</Text> */}
-                <Text style={styles.locationText}>GALLE</Text>
+                <Text style={styles.locationText}>{weatherDate.name}</Text>
             </View>
             <View style={styles.dateTime}>
                 <Text style={styles.dateTimeText}>{formattedDate}</Text>
             </View>
             <View style={styles.temperature}>
-                {/* <Text>{weatherDate.temp}°</Text> */}
-                <Text style={styles.temperatureText}>28°</Text>
+                <Text style={styles.temperatureText}>{weatherDate.main.temp}°</Text>
                 <Image source={cloudIcon} style={styles.cloudIcon} />
             </View>
             <View style={styles.weather}>
-                {/* <Text>{weatherDate.description}</Text> */}
-                <Text style={styles.weatherText}>SCATTER CLOUDS</Text>
+                <Text style={styles.weatherText}>{weatherDate.weather[0].description}</Text>
             </View>
         </View>
     )

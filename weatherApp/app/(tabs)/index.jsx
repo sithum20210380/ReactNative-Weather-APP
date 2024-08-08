@@ -1,7 +1,7 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import Header from '../../components/Header/index'
-import LocationSection from '../../components/LocationSection/index'
+import LocationSection from '../../components/TopWeatherInfo/index'
 import bgImage from '../../assets/images/1.jpg'
 
 export default function index() {

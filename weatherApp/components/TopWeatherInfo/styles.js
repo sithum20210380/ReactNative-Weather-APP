@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     },
     temperatureText: {
         color: 'white',
-        fontSize: 78,
+        fontSize: 58,
     },
     weatherText: {
         color: 'white',
