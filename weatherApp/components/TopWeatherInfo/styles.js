@@ -16,14 +16,17 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         gap: 10,
+        marginBottom: -10,
     },
     dateTime: {
         marginTop: 15,
+        marginBottom: -10,
     },
     temperature: {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
+        marginBottom: -14,
     },
     cloudIcon: {
         width: 90,
@@ -44,7 +47,7 @@ const styles = StyleSheet.create({
     },
     weatherText: {
         color: 'white',
-        fontSize: 28,
+        fontSize: 34,
         fontWeight: 'bold',
     },
 
@@ -74,6 +77,34 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         gap: 5,
+    },
+    bottomContainer:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: 30,
+        width: '100%',
+        backgroundColor: 'white',
+        padding: 20,
+        borderRadius: 20,
+    },
+    upperTextContainer: {
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    bottomContainermiddleText: {
+        color: '#a1a1a1',
+        fontSize: 14,
+        fontWeight: '500',
+    },
+    bottomTextContainer: {
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    cloudIconBottom: {
+        width: 70,
+        height: 70,
     },
     middleText: {
         color: '#a1a1a1',

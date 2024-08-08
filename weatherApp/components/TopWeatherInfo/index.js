@@ -66,6 +66,38 @@ export default function index() {
                     <Text style={styles.bottomText}>{weatherDate.wind.speed}m/s</Text>
                 </View>
             </View>
+            <View style={styles.bottomContainer}>
+                <View style={styles.maxTempContainer}>
+                    <View style={styles.upperTextContainer}>
+                        <Text style={styles.bottomText}>{weatherDate.main.temp_max}°C</Text>
+                        <Text style={styles.bottomContainermiddleText}>{weatherDate.weather[0].description}</Text>
+                    </View>
+                    <View style={styles.bottomTextContainer}>
+                        <Image source={cloudIcon} style={styles.cloudIconBottom} />
+                        <Text style={styles.bottomContainermiddleText}>11.30 AM</Text>
+                    </View>
+                </View>
+                <View style={styles.humidityContiner}>
+                    <View style={styles.upperTextContainer}>
+                        <Text style={styles.bottomText}>{weatherDate.main.temp_max}°C</Text>
+                        <Text style={styles.bottomContainermiddleText}>{weatherDate.weather[0].description}</Text>
+                    </View>
+                    <View style={styles.bottomTextContainer}>
+                        <Image source={cloudIcon} style={styles.cloudIconBottom} />
+                        <Text style={styles.bottomContainermiddleText}>11.30 AM</Text>
+                    </View>
+                </View>
+                <View style={styles.windContainer}>
+                    <View style={styles.upperTextContainer}>
+                        <Text style={styles.bottomText}>{weatherDate.main.temp_max}°C</Text>
+                        <Text style={styles.bottomContainermiddleText}>{weatherDate.weather[0].description}</Text>
+                    </View>
+                    <View style={styles.bottomTextContainer}>
+                        <Image source={cloudIcon} style={styles.cloudIconBottom} />
+                        <Text style={styles.bottomContainermiddleText}>11.30 AM</Text>
+                    </View>
+                </View>
+            </View>
         </View>
 
     )
